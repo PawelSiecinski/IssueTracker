@@ -1,5 +1,7 @@
 # Issue Tracker
 
+<img width="1331" alt="image" src="https://user-images.githubusercontent.com/97555288/211207614-922b790a-e30c-49ab-a62f-8db5c882ad3d.png">
+
 This is an example project with usage of
 - React
 - Typescript
