@@ -1,6 +1,6 @@
 # Issue Tracker
 
-<img width="1331" alt="image" src="https://user-images.githubusercontent.com/97555288/211207614-922b790a-e30c-49ab-a62f-8db5c882ad3d.png">
+<img width="1647" alt="image" src="https://user-images.githubusercontent.com/97555288/211207787-7fc8c85f-0249-4da8-8b74-b40c8399f2ef.png">
 
 This is an example project with usage of
 - React
