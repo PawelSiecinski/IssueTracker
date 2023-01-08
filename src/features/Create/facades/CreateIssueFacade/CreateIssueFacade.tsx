@@ -1,13 +1,13 @@
 import { useContext } from "react";
 import { CreateIssue } from "../../components/CreateIssue";
-import { CardsContext } from "context";
+import { CardsContext, CardsContextType } from "context";
 import { useNavigate } from "react-router-dom";
 import styles from "./CreateIssueFacade.module.css";
 
 const { container } = styles;
 
 export default function CreateIssueFacade() {
-  const { cards, setCards, isAnimated } = useContext(CardsContext);
+  const { cards, isAnimated, setCards} = useContext<CardsContextType>(CardsContext);
   const navigate = useNavigate();
 
   return (

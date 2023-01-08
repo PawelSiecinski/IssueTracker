@@ -1,8 +1,9 @@
-import { CardsContext } from "context";
 import { useContext } from "react";
 import { useLocation } from "react-router-dom";
 import { HomeHeader, ClosedHeader, CreateHeader } from "./private";
-import { CardsContextType } from "context/types";
+import type { CardsContextType } from "context/types";
+import { CardsContext } from "context";
+
 
 const HeaderFacade = () => {
   const { pathname: page } = useLocation();

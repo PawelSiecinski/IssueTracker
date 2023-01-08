@@ -1,10 +1,10 @@
 import { useContext } from "react";
 import { IssueCard } from "features/Home";
 import { CardsContext } from "context";
-import { CardsContextType, CardType } from "context/types";
-import styles from "./IssueFacade.module.css";
+import type { CardsContextType, CardType } from "context/types";
 import { useEffect } from "react";
 import { useMemo } from "react";
+import styles from "./IssueFacade.module.css";
 
 type PropsType = {
   onlyClosed?: boolean;
@@ -13,7 +13,7 @@ type PropsType = {
 const { container, title } = styles;
 
 export default function IssueFacade({ onlyClosed = false }: PropsType) {
-  const { cards, setCards, sortedBy, setSortedBy } =
+  const { cards, sortedBy, setCards, setSortedBy } =
     useContext<CardsContextType>(CardsContext);
 
   useEffect(() => {

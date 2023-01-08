@@ -1,10 +1,25 @@
-import { createContext, useState } from "react";
+import { createContext, ReactNode, useState } from "react";
 import { mockedCards } from "../mocks";
-import { SortedBy, CardType } from "./types";
+import { SortedBy, CardType, CardsContextType } from "./types";
 
-export const CardsContext = createContext(null);
+type PropsType = {
+  children?: ReactNode
+}
 
-export const CardsProvider = ({ children }) => {
+const defaultState = {
+  cards: [],
+  message: "",
+  sortedBy: "opened_all" as SortedBy,
+  isAnimated: true,
+  setIsAnimated: () => {},
+  setCards: () => {},
+  setMessage: () => {},
+  setSortedBy: () => {}
+}
+
+export const CardsContext = createContext<CardsContextType>(defaultState);
+
+export const CardsProvider = ({ children }: PropsType) => {
   const [cards, setCards] = useState<CardType[]>(mockedCards);
   const [sortedBy, setSortedBy] = useState<SortedBy>("none");
   const [message, setMessage] = useState<string>("");

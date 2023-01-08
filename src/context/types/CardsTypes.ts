@@ -5,7 +5,8 @@ export type CardsContextType = {
     sortedBy: SortedBy;
     isAnimated: boolean;
     setIsAnimated: (isAnimated: boolean) => void
-    setCards: (cards: any) => void;
+    setCards: (cards: CardType[]) => void;
+    setMessage: (message: string) => void;
     setSortedBy: (sortedBy: SortedBy) => void
 };
 

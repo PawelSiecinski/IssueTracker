@@ -73,21 +73,22 @@ export default function IssueCard({
   }, [id, setCards]);
 
   return (
-    <div className={cx(card, { [fadeOut]: shouldFadeOut })} key={id}>
+    <div data-testid="card_container" className={cx(card, { [fadeOut]: shouldFadeOut })} key={id}>
       <div className={cardHeader}>
         {!isPending && isOpened && (
-          <div className={pendingButton} onClick={onCardPendingClick}>
+          <div data-testid="card_pending_button" className={pendingButton} onClick={onCardPendingClick}>
             to pending
           </div>
         )}
         {isOpened && (
-          <div className={exitButton} onClick={onCardCloseClick}>
+          <div data-testid="card_close_button" className={exitButton} onClick={onCardCloseClick}>
             close
           </div>
         )}
       </div>
-      <div className={cardDescription}>{description}</div>
+      <div data-testid="card_description" className={cardDescription}>{description}</div>
       <div
+        data-testid="card_status"
         className={cx(status, {
           [transformPending]: statusBeingChanged,
           [pending]: isPending && !statusBeingChanged,
