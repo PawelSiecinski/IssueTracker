@@ -1,1 +1,1 @@
-export {default as CreateIssueFacade} from './CreateIssueFacade';
+export {default as CreateIssueTable} from './CreateIssueFacade';
