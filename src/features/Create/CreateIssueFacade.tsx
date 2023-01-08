@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { CreateIssue } from "../../components/CreateIssue";
+import { CreateIssue } from "./components/CreateIssue";
 import { CardsContext, CardsContextType } from "context";
 import { useNavigate } from "react-router-dom";
 import styles from "./CreateIssueFacade.module.css";

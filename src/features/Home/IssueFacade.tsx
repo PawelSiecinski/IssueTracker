@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { IssueCard } from "features/Home";
+import { IssueCard } from "./components";
 import { CardsContext } from "context";
 import type { CardsContextType, CardType } from "context/types";
 import { useEffect } from "react";
