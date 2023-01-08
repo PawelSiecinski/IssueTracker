@@ -27,10 +27,7 @@ const CreateHeader = ({ isAnimated, setIsAnimated }: PropsType) => {
 
   const onAnimationsDisabledClick = useCallback(() => {
     setIsAnimated(false);
-    console.log('asdasd')
   }, [setIsAnimated]);
-
-  console.log(isAnimated);
 
   return (
     <div className={container}>
