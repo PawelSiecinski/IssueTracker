@@ -1,0 +1,162 @@
+.container {
+    margin: 2rem;
+}
+
+.create {
+    color: green;
+}
+
+.create:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.closed {
+    color: darkred;
+}
+
+.create:hover {
+    cursor: pointer;
+    color: black;
+}
+
+a {
+    all: unset;
+}
+
+a {
+    cursor: pointer;
+}
+
+.home {
+    color: goldenrod;
+}
+
+.home:hover {
+    cursor: pointer;
+    color: black;
+
+}
+
+.initial {
+    color: black;
+}
+
+.initial:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.closed:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.headerTop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pending {
+    color: goldenrod;
+}
+
+.selectedPendingSort {
+    color: goldenrod !important;
+    cursor: pointer
+}
+
+.pendingSort {
+    color: black;
+}
+
+.pendingSort:hover {
+    color: goldenrod;
+    cursor: pointer;
+}
+
+.selectedOnlyOpenedSort {
+    color: green;
+    cursor: pointer
+}
+
+.onlyOpenedSort {
+    color: black;
+}
+
+.onlyOpenedSort:hover {
+    color: green;
+    cursor: pointer;
+}
+
+.pending:hover {
+    color: black;
+}
+
+.headerBottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.enabled {
+    color: green;
+}
+
+.disabledAnimation {
+    color: black;
+}
+
+.disabledAnimation:hover,
+.selectedDisabledAnimation {
+    color: darkred;
+    cursor: pointer;
+}
+
+.selectedDisabledAnimation {
+    color: darkred;
+}
+
+.enabledAnimation {
+    color: black;
+}
+
+.enabledAnimation:hover {
+    color: green;
+    cursor: pointer;
+}
+
+.enabledAnimation:hover,
+.selectedEnabledAnimation:hover {
+    color: green;
+    cursor: pointer;
+}
+
+.selectedEnabledAnimation {
+    color: green;
+}
+
+@media only screen and (max-width: 600px) {
+    .headerTop {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    h1 {
+        margin: 0.5rem;
+        text-align: center;
+    }
+
+    .headerBottom {
+        margin-top: 1.5rem;
+        margin-bottom: 0;
+        text-align: center;
+        justify-content: center;
+    }
+}

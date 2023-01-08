@@ -1,0 +1,1 @@
+export {default as mockedCards} from './mockedCards.json';

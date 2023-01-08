@@ -1,0 +1,21 @@
+.container {
+    margin: 2rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+a {
+    all: unset;
+}
+
+.subtleText {
+    color: darkgoldenrod;
+}
